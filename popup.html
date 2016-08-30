@@ -16,7 +16,7 @@
         /* avoid an excessively wide status text */
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 40000px;
+        max-width: 400px;
       }
     </style>
 
@@ -27,12 +27,14 @@
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
     <script src="alert.js"></script>
+    <link rel="stylesheet" type = "text/css" href = "css/popup.css">
   </head>
   <body>
+  <h1 id= "lol"> CC 9000</h1>
     <div id="status">
       <div id = "form">
         <form>
-          <h3>Category</h3>
+          <h3 class= "porn">Category</h3>
             <select id = "category">
               <option value = "jackets">Jackets</option>
               <option value = "shirts">Shirts</option>
@@ -45,15 +47,17 @@
               <option value = accessories>Accessories</option>
               <option value = "skate">Skate</option>
             </select>
-          <h3>Image Alt Code</h3>
-          <input type = "text" placeholder="image alt property"></form>
-          <h3>Select Size</h3>
+          <h3 class="porn">Image Alt Code</h3>
+          <input type = "text" placeholder="Weiner Size"></form>
+          <h3 class= "porn">Select Size</h3>
             <select id ="size">
               <option value = "Small">Small</option>
               <option value = "Medium">Medium</option>
               <option value = "Large">Large</option>
               <option value = "XLarge">XLarge</option>
-         </select>
+         </select><br>
+
+         <input type="submit" value="Submit">
         </form>
       </div>
     </div>
@@ -61,4 +65,3 @@
     <img id="image-result" hidden>
   </body>
 </html>
-
