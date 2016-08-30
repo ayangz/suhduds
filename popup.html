@@ -1,0 +1,65 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 40000px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="alert.js"></script>
+  </head>
+  <body>
+    <div id="status">
+      <div id = "form">
+        <form>
+          <h3>Category</h3>
+            <select id = "category">
+              <option value = "jackets">Jackets</option>
+              <option value = "shirts">Shirts</option>
+              <option value = "tops_sweaters">Tops/Sweaters</option>
+              <option value = "sweatshirts">Sweatshirts</option>
+              <option value = "pants">Pants</option>
+              <option value = "t-shirts">T-Shirts</option>
+              <option value = "hats">Hats</option>
+              <option value = "bags">Bags</option>
+              <option value = accessories>Accessories</option>
+              <option value = "skate">Skate</option>
+            </select>
+          <h3>Image Alt Code</h3>
+          <input type = "text" placeholder="image alt property"></form>
+          <h3>Select Size</h3>
+            <select id ="size">
+              <option value = "Small">Small</option>
+              <option value = "Medium">Medium</option>
+              <option value = "Large">Large</option>
+              <option value = "XLarge">XLarge</option>
+         </select>
+        </form>
+      </div>
+    </div>
+    
+    <img id="image-result" hidden>
+  </body>
+</html>
+
