@@ -7,6 +7,6 @@
 	},
 
 	"permissions": [
-		"storage"
+		"storage", "http://www.supremenewyork.com/*"
 	]
 }
