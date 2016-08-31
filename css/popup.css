@@ -1,16 +1,32 @@
 
 
 #rectangle{
-	width: 300px;
-	height: 450px; 
+	width: 260px;
+	height: 380px; 
 	background: rgb(169,69,69);
 }
 
-#box{
-	width: 300px;
-	height: 50px; 
-	background: rgb(122,22,22);
+#side{
+	width:60px;
+	height:330px;
+	background: rgb(178,201,222);
+	margin-left: 200px;
+	margin-top:-330px;
 }
+
+#bot{
+	width:260px;
+	height:50px;
+	background: rgb(82,204,106);
+	margin-top: -50px;
+}
+
+/*top*/div{ 
+	width: 260px;
+	height: 50px;
+	background: rgb(124,84,204);
+} 
+
 
 .titles {
 	font-size: 20px;
@@ -22,3 +38,10 @@
 	font-family: Georgia;
 }
 
+#down{
+	margin-top:50px;
+}
+
+#lol{
+	background: rgb(124,84,204);
+}
