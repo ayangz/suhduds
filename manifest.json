@@ -1,12 +1,48 @@
 {
 	"name": "Supreme",
 	"manifest_version": 2,
-	"version": "1",
+	"version": "0.0.0.1",
+
+	"icons": {
+		"16": "pepe16.png",
+		"32": "pepe32.png",
+		"48": "pepe48.png",
+		"128": "pepe128.png"
+	},
 	"browser_action": {
 		"default_popup": "test.html"
 	},
 
+	"content_scripts": [
+		{
+			"matches": ["http://www.supremenewyork.com/shop/jackets/*",
+						"http://www.supremenewyork.com/shop/shirts/*",
+						"http://www.supremenewyork.com/shop/tops_sweaters/*",
+						"http://www.supremenewyork.com/shop/sweatshirts/*",
+						"http://www.supremenewyork.com/shop/pants/*",
+						"http://www.supremenewyork.com/shop/t-shirts/*",
+						"http://www.supremenewyork.com/shop/hats/*",
+						"http://www.supremenewyork.com/shop/bags/*",
+						"http://www.supremenewyork.com/shop/accessories/*",
+						"http://www.supremenewyork.com/shop/skate/*"
+					],
+			"js": ["addtocart.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches": ["http://www.supremenewyork.com/shop/all/*"],
+			"js": ["clicklink.js"],
+			"run_at": "document_end"
+		},
+		{
+			"matches": ["https://www.supremenewyork.com/checkout"],
+			"js": ["fillform.js"]
+		}
+	],
+
+
+
 	"permissions": [
-		"storage", "http://www.supremenewyork.com/*"
+		"storage", "http://www.supremenewyork.com/*", "tabs"
 	]
 }

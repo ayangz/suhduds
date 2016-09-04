@@ -1,7 +1,12 @@
 	document.getElementById("codeget").onclick = function() {
-
-		chrome.storage.sync.get('img_code', function(data){
-			alert(data.img_code);
+		var category = "";
+		chrome.storage.sync.get('category', function(data){
+			alert(data.category);
+			category = data.category;
 		});
-		window.location.replace("http://www.supremenewyork.com/shop/all/" + chrome.storage.sync.get('category', function(){}));
+		console.log(category);
+
+		var link = "http://www.supremenewyork.com/shop/all/" + category;
+
+		//chrome.tabs.update({url: link});
 	}
