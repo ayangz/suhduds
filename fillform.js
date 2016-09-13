@@ -1,4 +1,4 @@
-chrome.storage.local.get([
+chrome.storage.sync.get([
         'name',
         'email',
         'tel',
@@ -9,8 +9,7 @@ chrome.storage.local.get([
         'card',
         'number',
         'exp_month',
-        'exp_year',
-        'cvv'
+        'exp_year'
     ], 
     function(data) {
         function fillForm() {
@@ -21,14 +20,14 @@ chrome.storage.local.get([
           document.getElementById("order_billing_city").value = data.city;
           document.getElementById("order_billing_state").value = data.state;
           document.getElementById("order_billing_zip").value = data.zip;
+          document.getElementById("credit_card_type") = data.card;
           document.getElementById("cnb").value = data.number;
           document.getElementById("credit_card_month").value = data.exp_month;
           document.getElementById("credit_card_year").value = data.exp_year;
-          document.getElementById("vval") = data.cvv;
           document.getElementsByClassName("iCheck-helper")[1].click();
         }
 
         fillForm();
-        chrome.storage.local.clear();
+        chrome.storage.sync.clear();
     }
 );

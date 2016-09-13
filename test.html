@@ -53,8 +53,8 @@
                 <option value = accessories>Accessories</option>
                 <option value = "skate">Skate</option>
             </select>
-          <p class="titles">Image Alt Code</p>
-          <input type = "text" placeholder="Url Link" id = "img_code">
+          <p class="titles">Keyword</p>
+          <input type = "text" placeholder="Keyword" id = "img_code">
           <p class= "titles">Select Size</p>
             <select id ="size">
                 <option value = "Small">Small</option>
@@ -63,26 +63,41 @@
                 <option value = "XLarge">XLarge</option>
             </select><br>
 
-         <p class = "titles">Name</p>
-         <input id = "name" type = "text" placeholder= "Full Name">
+        <div class = "input_fields">
+        <p class = "titles">Name</p>
+        <input id = "name" type = "text" placeholder= "Full Name">
+        </div>
 
-         <p class = "titles">Email</p>
-         <input id = "email" type = "text" placeholder = "Email">
+        <div class = "input_fields">
+        <p class = "titles">Email</p>
+        <input id = "email" type = "text" placeholder = "Email">
+        </div>
 
-         <p class = "titles">Telephone Number</p>
-         <input id = "tel" type = "text" placeholder = "Phone number *NUMERALS ONLY*">
+        <div class = "input_fields">
+        <p class = "titles">Telephone Number</p>
+        <input id = "tel" type = "text" placeholder = "Phone number *NUMERALS ONLY*">
+        </div>
 
-         <p class = "titles">Address</p>
-         <input id = "address"type = "text" placeholder = "Street Address">
+        <br>
 
-         <p class = "titles">Zip</p>
-         <input id = "zip" type = "text" placeholder = "Zip">
+        <div class = "input_fields">
+        <p class = "titles">Address</p>
+        <input id = "address"type = "text" placeholder = "Street Address">
+        </div>
 
-         <p class = "titles">City</p>
-         <input id = "city" type = "text" placeholder = "City">
+        <div class = "input_fields">
+        <p class = "titles">Zip</p>
+        <input id = "zip" type = "text" placeholder = "Zip">
+        </div>
 
-         <p class = "titles">State</p>
-         <select id = "state">
+        <div class = "input_fields">
+        <p class = "titles">City</p>
+        <input id = "city" type = "text" placeholder = "City">
+        </div>
+
+        <div class = "input_fields">
+        <p class = "titles">State</p>
+        <select id = "state">
             <option value="AL">AL</option>
             <option value="AK">AK</option>
             <option value="AS">AS</option>
@@ -143,17 +158,25 @@
             <option value="WI">WI</option>
             <option value="WY">WY</option>
         </select>
+        </div>
 
+        <br>
+
+        <div class = "input_fields">
         <p  class = "titles">Card Type</p>
         <select id = "card">
             <option value = 0>Visa</option>
             <option value = 1>American Express</option>
             <option value = 2>Mastercard</option>
         </select>
+        </div>
 
+        <div class = "input_fields">
         <p class = "titles">Credit Card Number</p>
         <input id = "number" type = "text" placeholder = "Credit Card Number">
+        </div>
 
+        <div class = "input_fields">
         <p class = "titles">Exp Month</p>
         <select id = "exp_month">
             <option value = 01>01</option>
@@ -169,7 +192,9 @@
             <option value = 11>11</option>
             <option value = 12>12</option>
         </select>
+        </div>
 
+        <div class = "input_fields">
         <p class = "titles">Exp Year</p>
         <select id = "exp_year">
             <option value="2016">2016</option>
@@ -184,11 +209,16 @@
             <option value="2025">2025</option>
             <option value="2026">2026</option>
         </select>
+        </div>
 
         <br>
+
+        <div id = "buttons">
+            <button id = "submit">Submit</button>
+            <button id = "codeget">Clear Saved Data</button>
+        <div>
         </form>
-        <button value="Submit" id = "submit">Submit</button>
-        <button id = "codeget">Click my ass</button>
+
       </div>
   </body>
   <script type = "text/javascript" src = "form_handler.js"></script>

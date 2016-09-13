@@ -1,13 +1,10 @@
 {
-	"name": "Supreme",
+	"name": "Supreme Shopper",
 	"manifest_version": 2,
-	"version": "0.0.0.1",
+	"version": "0.0.0.5",
 
 	"icons": {
-		"16": "pepe16.png",
-		"32": "pepe32.png",
-		"48": "pepe48.png",
-		"128": "pepe128.png"
+		"128": "logo.png"
 	},
 	"browser_action": {
 		"default_popup": "test.html"
@@ -17,7 +14,7 @@
 		{
 			"matches": ["http://www.supremenewyork.com/shop/jackets/*",
 						"http://www.supremenewyork.com/shop/shirts/*",
-						"http://www.supremenewyork.com/shop/tops_sweaters/*",
+						"http://www.supremenewyork.com/shop/tops-sweaters/*",
 						"http://www.supremenewyork.com/shop/sweatshirts/*",
 						"http://www.supremenewyork.com/shop/pants/*",
 						"http://www.supremenewyork.com/shop/t-shirts/*",
@@ -40,9 +37,13 @@
 		}
 	],
 
-
+	"incognito": "not_allowed",
 
 	"permissions": [
-		"storage", "http://www.supremenewyork.com/*", "tabs"
+		"storage",
+		"http://www.supremenewyork.com/*",
+		"tabs",
+		"identity",
+		"https://www.googleapis.com/"
 	]
 }
