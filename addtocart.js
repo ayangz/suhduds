@@ -8,11 +8,10 @@ chrome.storage.sync.get('size',function(data){
       if(sizesList.options[i].text == mysize) {
 
         sizesList.selectedIndex = i;
+        document.getElementById("add-remove-buttons").childNodes[0].click();
+        setTimeout(function(){document.getElementsByClassName("button checkout")[0].click();}, 220);
       }
     }
-
-    document.getElementById("add-remove-buttons").childNodes[0].click();
-    setTimeout(function(){document.getElementsByClassName("button checkout")[0].click();}, 250);
 
   }
 

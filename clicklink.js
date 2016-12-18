@@ -10,7 +10,7 @@ chrome.storage.sync.get('img_code', function(data){
 	  	console.log(link);
 	  	location.replace(link);
 	  } else {
-	  	setTimeout(function(){ location.reload()}, 800);
+	  	setTimeout(function(){ location.reload()}, 250);
 	  }
 	}
 

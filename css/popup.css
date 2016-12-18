@@ -33,19 +33,13 @@ select, input {
 	border-radius: 10px;
 }
 
-#rectangle {
-	width: 100%;
-	height: 100%;
-	background: rgb(169,69,69);
-}
-
 #exp_month {
 	margin-left: 25%;
 }
 
 #buttons {
 	object-position: center;
-	margin-left:25%;
+	margin-left: 3em;
 	padding-top: 20px;
 	clear: both;
 }
@@ -72,4 +66,22 @@ button:hover {
 	font-size: 20px;
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+}
+
+#note {
+	position:relative;
+	margin:auto;
+}
+
+#twitter {
+	text-align: center;
+}
+
+#cvv {
+	width: 5em;
+}
+
+#garb {
+	background-color: black;
+	color: white;
 }

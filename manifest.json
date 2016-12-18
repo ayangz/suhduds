@@ -1,10 +1,10 @@
 {
-	"name": "Supreme Shopper",
+	"name": "Cheese Boys",
 	"manifest_version": 2,
-	"version": "0.0.0.5",
-
+	"version": "0.0.0.10",
+	"options_page": "test.html",
 	"icons": {
-		"128": "logo.png"
+		"128": "pepe128.png"
 	},
 	"browser_action": {
 		"default_popup": "test.html"
@@ -33,11 +33,10 @@
 		},
 		{
 			"matches": ["https://www.supremenewyork.com/checkout"],
-			"js": ["fillform.js"]
+			"js": ["fillform.js"],
+			"run_at": "document_end"
 		}
 	],
-
-	"incognito": "not_allowed",
 
 	"permissions": [
 		"storage",
